@@ -1,0 +1,154 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+} 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  background: var(--Violet) url(images/bg-mobile.svg) top no-repeat content-box;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: white;  
+}
+
+.main-container {
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto; 
+}
+
+/* header */
+
+header {
+    font-family: "Poppins", sans-serif;
+    padding: 2.5rem 0;
+}
+header img {
+    height: 38px;
+}
+
+/* main container */
+main {
+    padding: 1rem 0 0;
+}
+
+/* left container */
+left-container img {
+    width: 100%;
+    display: block;
+}
+
+/* right container */
+ right-container {
+    padding: 3rem 0;
+    text-align: center;
+  }
+right-container h1 {
+    padding: 0.5rem 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+right-container p {
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+.btn {
+    margin-top: 1rem;
+    padding: 1rem 0;
+    width: 70%;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    color: var(--Violet);
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  .btn:hover {
+    background-color: var(--SoftMagenta);
+    color: white;
+  }
+/* footer */
+
+footer {
+    margin: 0.5rem 0 2rem;
+    text-align: center;
+  }
+
+footer.fab {
+    font-size: 2rem;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.5s;
+  }
+  footer.fab:hover {
+    color: var(--SoftMagenta);
+  }
+
+  footer.attribution {
+        position: absolute;
+        font-size: 11px;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 1.5rem;
+  }
+
+  footer.attribution a {
+      color:blue;
+  }
+
+
+/* responsiveness */
+
+@media screen and (min-width: 400px) {
+    body {
+      background: var(--Violet) url(images/bg-desktop.svg) center/cover no-repeat;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    body {
+      height: 100vh;
+    }
+    header img {
+      height: 50px;
+    }
+    main {
+      margin-top: 2rem;
+      display: flex;
+      height: 60vh;
+    }
+    .left-container {
+      width: 150%;
+    }
+    .left-container img {
+      height: 100%;
+    }
+    .right-container {
+      margin-left: 4rem;
+      text-align: left;
+    }
+    .right-container h1 {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+    .btn {
+      margin-top: 2rem;
+      width: 45%;
+    }
+    footer {
+      margin-top: 2rem;
+      text-align: right;
+    }
+    footer .fab {
+      margin: 0 8px;
+    }
+  }
